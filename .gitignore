@@ -1,0 +1,14 @@
+build/
+*.o
+*.a
+*.so
+*.swp
+*.swo
+__pycache__/
+*.pyc
+
+results/raw/
+results/tmp/
+
+*.log
+*.tmp

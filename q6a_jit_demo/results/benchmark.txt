@@ -1,0 +1,41 @@
+LiteRT Embedded Inference — Radxa Dragon Q6A / Qualcomm QCS6490
+
+Model:
+  MobileNetV2 1.0 224 INT8
+  mobilenet_v2_1.0_224_quant.tflite
+
+Platform:
+  Radxa Dragon Q6A
+  Qualcomm QCS6490
+  ARM64 / aarch64
+  Linux
+
+Software:
+  LiteRT
+  QAIRT 2.47.0.260601
+  Qualcomm QNN HTP backend
+
+CPU / XNNPACK:
+  First run: 108.501 ms
+  Slowest:    108.501 ms
+  Fastest:    100.377 ms
+  Average:    101.870 ms
+
+Qualcomm HTP:
+  First run: 3.717 ms
+  Slowest:   3.717 ms
+  Fastest:   1.681 ms
+  Average:   1.888 ms
+
+Approximate average speedup:
+  101.870 / 1.888 = 53.96x
+
+HTP compilation:
+  Qualcomm compiler plugin loaded successfully
+  QAIRT SDK version: v2.47.0.260601114230
+  QCS6490 HTP graph compiled successfully
+  Context binary size: 5,488,640 bytes
+  Context binary subsequently loaded from cache
+
+Result:
+  Successful LiteRT -> Qualcomm QNN -> HTP inference
